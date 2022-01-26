@@ -58,11 +58,4 @@ public class Employee {
     @Temporal(TemporalType.TIMESTAMP)
     private Date   lastModifiedDate;
 
-//    echo "# SpringDataJPA-Auditing-JPA-Hibernate-" >> README.md
-//    git init
-//    git add README.md
-//    git commit -m "first commit"
-//    git branch -M main
-//    git remote add origin git@github.com:Daham-Mustaf/SpringDataJPA-Auditing-JPA-Hibernate-.git
-//    git push -u origin main
 }
