@@ -26,7 +26,7 @@ public class EmployeeService {
     }
 
     // update employee
-    public String saveEmployee(Long id, double salary, InputRequest<Employee> request){
+    public String updateSalary(Long id, double salary, InputRequest<Employee> request){
 
         Employee employee = employeeRepository.findById(id).get();
         if(employee!=null){

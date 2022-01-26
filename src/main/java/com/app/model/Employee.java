@@ -1,5 +1,6 @@
 package com.app.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -28,6 +29,7 @@ public class Employee {
 
     @Temporal(TemporalType.DATE)
     @Column(name =  "BIRTH_DATE")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy")
     private Date birthDate;
 
     @Column(name = "DEP")
@@ -43,6 +45,7 @@ public class Employee {
     @CreatedDate
     @Column(name =  "CREATED_DATE")
     @Temporal(TemporalType.TIMESTAMP)
+
     private Date   createdDate;
 
     @CreatedBy
